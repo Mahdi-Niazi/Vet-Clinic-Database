@@ -58,3 +58,14 @@ set weight_kg = weight_kg * -1;
 
 commit;
 select * from animals
+
+
+select count(id) from animals;
+select count(escape_attempts) from animals where escape_attempts = 0;
+select neutered, max(escape_attempts) from animals group by neutered;
+select species, max(weight_kg), min(weight_kg) from animals group by species;
+
+select species, avg(escape_attempts) 
+from animals
+where date_of_birth between '1990-01-01' AND '2000-12-31'
+group by species;
