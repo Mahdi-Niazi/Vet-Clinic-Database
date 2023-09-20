@@ -53,9 +53,9 @@ savepoint sp1;
 update animals 
 set weight_kg = weight_kg * -1;
 select * from animals;
-rollback;
+rollback to sp1;
 update animals
-set weight_kg = weight_kg * -1;
+set weight_kg = weight_kg * -1 WHERE weight_kg < 0;
 commit;
 select * from animals
 
