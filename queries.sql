@@ -19,3 +19,19 @@ WHERE species = 'unspecified';
 Rollback;
 
 SELECT * FROM animals;
+
+begin;
+
+update animals
+set species = 'digimon'
+where name like '%mon';
+
+update animals 
+set species = 'pokemon'
+where species is null;
+
+select * from animals 
+
+commit;
+
+select * from animals;
