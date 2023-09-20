@@ -18,7 +18,7 @@ INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_
 VALUES (6, 'Plantmon', '2021-11-15', 2, true, 5.7);
 
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg)
-VALUES (7, 'Squirtle', '1993-05-02', 3, false, 12.13);
+VALUES (7, 'Squirtle', '1993-04-02', 3, false, 12.13);
 
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES (8, 'Angemon', '2005-06-12', 1, true, 45);
@@ -30,4 +30,4 @@ INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_
 VALUES (10, 'Blossom', '1998-10-13', 3, true, 17);
 
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg)
-VALUES (11, 'Ditto', '2022-05-15', 4, true, 22);
+VALUES (11, 'Ditto', '2022-05-14', 4, true, 22);

@@ -47,21 +47,22 @@ rollback;
 select * from animals;
 
 begin;
-
 delete from animals
 where date_of_birth > '2022-01-01';
-
 savepoint sp1;
-
 update animals 
 set weight_kg = weight_kg * -1;
-
+select * from animals;
+rollback;
+update animals
+set weight_kg = weight_kg * -1;
 commit;
 select * from animals
 
 
 select count(id) from animals;
 select count(escape_attempts) from animals where escape_attempts = 0;
+select avg(weight_kg) from animals;
 select neutered, max(escape_attempts) from animals group by neutered;
 select species, max(weight_kg), min(weight_kg) from animals group by species;
 
