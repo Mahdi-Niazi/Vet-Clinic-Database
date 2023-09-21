@@ -54,9 +54,9 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **Animals with its name**
-- **Animals with its date of birth**
-- **Animals with its weights**
+- **Created a database named vet_clinic.**
+- **Created a table named animals with corresponding columns upon the requirements💯**
+- **Inserted data of 4 animals with the corresponding name, date_of_birth, weight, neutered status, and escape attempts👌**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +108,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]([../../issues/](https://github.com/Mahdi-Niazi/Vet-Clinic-Database/issues)).
+Feel free to check the [issues page](https://github.com/Mahdi-Niazi/Vet-Clinic-Database/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
