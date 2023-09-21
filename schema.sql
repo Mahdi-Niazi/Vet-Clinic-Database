@@ -32,7 +32,7 @@ alter table animals add constraint fk_owner foreign key(owner_id) references own
 select * from animals;
 
 create table vets(
-	id primary key generated always as identity,
+	id int primary key generated always as identity,
 	name varchar(50),
 	age int,
 	date_of_graduation date
