@@ -70,3 +70,43 @@ select species, avg(escape_attempts)
 from animals
 where date_of_birth between '1990-01-01' AND '2000-12-31'
 group by species;
+
+select animals.name, owners.full_name
+from animals 
+inner join owners
+on animals.owner_id = owners.id
+where owners.full_name = 'Melody Pond';
+
+select animals.name, species.name
+from animals 
+inner join species
+on animals.species_id = species.id
+where species.name = 'Pokemon';
+
+select animals.name, owners.full_name
+from owners
+left join animals on animals.owner_id = owners.id;
+
+select species.name as species_name, count(*) as animal_count
+from species
+join animals on animals.species_id = species.id
+group by species.name
+order by animal_count desc;
+
+select animals.name, owners.full_name, species.name
+from animals
+join owners on animals.owner_id = owners.id
+join species on animals.species_id = species.id
+where species.name = 'Digimon' and owners.full_name = 'Jennifer Orwell'
+
+select animals.name, owners.full_name, species.name, animals.escape_attempts
+from animals
+join owners on animals.owner_id = owners.id
+join species on animals.species_id = species.id
+where owners.full_name = 'Dean Winchester' and animals.escape_attempts = 0
+
+select owners.full_name, count(*) as most_owner
+from owners
+join animals on animals.owner_id = owners.id
+group by owners.full_name
+order by most_owner desc

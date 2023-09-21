@@ -31,3 +31,28 @@ VALUES (10, 'Blossom', '1998-10-13', 3, true, 17);
 
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES (11, 'Ditto', '2022-05-14', 4, true, 22);
+
+insert into owners(full_name, age) values
+('Sam Smith', 34),
+('Jennifer Orwell', 19),
+('Bob', 45),
+('Melody Pond', 77),
+('Dean Winchester', 14),
+('Jodie Whittaker', 38);
+
+insert into species(name) values
+('Pokemon'), ('Digimon');
+
+update animals set species_id = case 
+when name like '%mon' then 1 else 2
+end;
+
+update animals set owner_id = case
+when name = 'Agumon' then 1
+when name in ('Gabumon', 'Pikachu') then 2
+when name in ('Devimon', 'Plantmon') then 3
+when name in ('Charmander', 'Squirtle', 'Blossom') then 4
+when name in ('Angemon', 'Boarmon') then 5
+end;
+
+
